@@ -1,0 +1,45 @@
+body
+{
+    font-family: "helvetica neue";
+    color: #666;
+    padding: 0 20%;
+}
+
+li input
+{
+    display: none;
+}
+
+li.edit input:focus
+{
+	border: 3px solid #a5cda5;
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+li.edit span
+{
+    display: none;
+}
+
+li.edit input
+{
+    display: initial;
+}
+
+/* body
+{
+    font-family: "helvetica neue";
+    color: #666;
+    padding: 0 20%;
+}
+
+img
+{
+  width: 200px;
+}
+
+.hide
+{
+  display: none;
+} */

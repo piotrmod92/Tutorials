@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta char="utf-8" />
+	<script type="text/javascript">
+		function sprawdz()
+		{
+			var liczba = document.getElementById("pole").value;
+			if (liczba.length==0) document.getElementById("wynik").innerHTML="";
+			else if (liczba>0) document.getElementById("wynik").innerHTML="dodatnia";
+			else if (liczba<0) document.getElementById("wynik").innerHTML="ujemna";
+			else if (liczba==0) document.getElementById("wynik").innerHTML="zero";
+			else document.getElementById("wynik").innerHTML="to nie jest liczba";
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="pole"/>
+	<input type="submit" value="sprawdź " onclick="sprawdz();"/>
+	<div id="wynik"></div>
+</body>
+</html>

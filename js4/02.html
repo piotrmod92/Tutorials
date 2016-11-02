@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Matematyka w JS</title>	
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+</head>
+
+<body>
+	
+	<script>
+	var pln = 1000;
+	
+	//przewalutowanie
+	document.write("Wpłata: "+pln+" PLN <br /><br />");
+	 var usd = pln / 3.92850128;
+	document.write("Saldo: "+usd+" USD <br />");
+	 usd=Math.floor(usd*100)/100;
+	document.write("Saldo: "+usd+" USD <br /><br />");
+	
+	//zakupy
+	var zakupy = 23.99;
+	document.write("Zakupy: "+zakupy +" USD <br />");
+	var prowizja = 0.02 * zakupy;
+	document.write("Prowizja: "+prowizja +" USD <br />");
+	prowizja=Math.ceil(prowizja*100)/100;
+	document.write("Prowizja: "+prowizja +" USD <br /><br />");
+	
+	//Po zakupach
+	usd = usd - zakupy - prowizja;
+	document.write("Saldo po zakupach: "+usd+" USD <br /><br />");
+	
+	//test
+	var usd2= 225.99;
+	usd2 = Math.trunc(usd2);
+	document.write("Saldo2: "+usd2+" USD <br /><br />");
+	
+	</script>
+	
+</body>
+</html>

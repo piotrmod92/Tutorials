@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<title>jQuery Tutorial</title>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<style type="text/css">
+	.jumbotron {
+		text-align: center;
+	}
+	button {
+		width: 100px;
+		height: 40px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Let's Have Fun!</h1>
+			<button class="panel-button" data-panelid="panel1">#btn1</button>
+			<button class="panel-button" data-panelid="panel2">#btn2</button>
+			<button class="panel-button" data-panelid="panel3">#btn3</button>
+			<button class="panel-button" data-panelid="panel4">#btn4</button>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-3">
+				<div id="panel1" style="display: none" class="panel panel-primary">
+					<div class="panel-heading">
+						#panel1
+					</div>
+					<div class="panel-body">
+						content
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div id="panel2" style="display: none" class="panel panel-primary">
+					<div class="panel-heading">
+						#panel2
+					</div>
+					<div class="panel-body">
+						content
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div id="panel3" style="display: none" class="panel panel-primary">
+					<div class="panel-heading">
+						#panel3
+					</div>
+					<div class="panel-body">
+						content
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div id="panel4" style="display: none" class="panel panel-primary">
+					<div class="panel-heading">
+						#panel4
+					</div>
+					<div class="panel-body">
+						content
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script>
+
+		$(function()
+		{
+			$('.panel-button').on('click', function()
+			{
+				var panelId = $(this).attr('data-panelid');
+				$('#'+panelId).toggle(500);
+			});
+
+			/*
+			$('#btn4').on('mouseover', function()
+			{
+				$('#panel4').fadeOut(500);
+			});
+			$('#btn4').on('click', function()
+			{
+				$('#panel4').fadeIn(500);
+			});
+			$('#btn1').html('myButton');
+			$('#panel1').css(
+			{
+				color: 'red',
+				fontWeight: 'bold'
+			});
+			$('#panel2').css({opacity: '0.5'});
+			.hide(1000).slideToggle(1000).slideToggle(1000).show(1000).slideUp(500).delay(1000).slideDown(500).fadeOut(1000).fadeIn(1000);
+			*/
+		});
+	
+	</script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
