@@ -1,6 +1,5 @@
 function odliczanie()
 	{
-		/* funkcja zegar */
 		var dzisiaj = new Date();
 		
 		var godzina = dzisiaj.getHours();
@@ -12,6 +11,7 @@ function odliczanie()
 		var sekunda = dzisiaj.getSeconds();
 		if (sekunda<10) sekunda = "0"+sekunda;
 		
-		document.getElementById("zegar").innerHTML = godzina+":"+minuta+":"+sekunda; 
-		setTimeout("odliczanie()",1000);
+		document.getElementById("zegar").innerHTML = godzina+":"+minuta+":"+sekunda;
+		 
+		 setTimeout("odliczanie()",1000);
 	}
