@@ -1,0 +1,432 @@
+/*
+Theme name: Learning WordPress
+Author: PM
+Version: 0.01
+*/
+
+body
+{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	background-color: #DDDDDD;
+}
+
+p
+{
+	line-height: 1.65em;
+}
+
+a:link,
+a:visited
+{
+	color: #006ec3;
+	text-decoration: none;
+}
+
+div.container
+{
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.site-header
+{
+	border-bottom: 2px solid #999;
+	margin-bottom: 10px;
+}
+
+.site-footer
+{
+	margin-top: 30px;
+	border-top: 2px solid #999;
+}
+
+article.post
+{
+	border-bottom: 1px dotted #bbbbbb;
+	margin-bottom: 20px;
+}
+
+article.post:last-of-type
+{
+	border-bottom: none;
+}
+
+/* Aside Styles */
+article.post-aside,
+article.post-link
+{
+	font-size: 120%;
+	background-color: #FFF5CB;
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
+
+article.post-aside p
+{
+	margin: 0px;
+	/* color: #000; */
+}
+
+article.post-aside a p
+{
+	color: #000;
+}
+
+.mini-meta
+{
+	font-size: 68%;
+	margin: 0;
+	color: #777;
+}
+/* Link Post Format Styles */
+article.post-link
+{
+	padding: 0;
+	background-color: #E0EBFF;
+	
+}
+
+article.post-link a
+{
+	display: block;
+	padding: 10px;
+}
+
+/* Post format Gallery Styles */
+article.post-gallery
+{
+	background-color: #222;
+	color: #FFF;
+	padding: 20px;
+}
+
+article.post-gallery h2
+{
+	text-align: center;
+}
+
+article.post-gallery a
+{
+	color: #FFF;
+}
+article.post-gallery img
+{
+	border: none !important;
+}
+
+/* Navigation menus */
+
+.site-nav ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before,
+.site-nav ul:after
+{
+	content: "";
+	display: table;
+}
+.site-nav ul:after { clear:both; }
+.site-nav ul { *zoom: 1; }
+.site-nav ul li { list-style: none; float: left; }
+
+/* Site header Menu */
+.site-header nav ul li { margin-right: 5px; }
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited
+{
+	display: block;
+	padding: 10px 18px;
+	border: 1px solid #888;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+.site-header nav ul li a:hover
+{
+	background-color: #999;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited
+{
+	font-weight: bold;
+	background-color: #006ec3;
+	color: #FFF;
+}
+
+/* Post Columns */
+.home-columns
+{
+	padding-top: 20px;
+}
+
+.home-columns h2
+{
+	margin-bottom: .7em;
+}
+
+.home-columns .one-half
+{
+	width: 45%;
+	float: left;
+	margin-right: 10%;
+}
+
+.home-columns .last
+{
+	margin-right: 0;
+}
+
+.home-columns .post-item
+{
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 1px;
+	margin-bottom: 16px;
+}
+
+.home-columns .post-item:last-of-type
+{
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.home-columns h4
+{
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+.home-columns h4 a
+{
+	text-decoration: none;
+}
+
+.home-columns h4 a:hover
+{
+	text-decoration: underline;
+}
+
+.subtle-date
+{
+	margin-left: 5px;
+	font-weight: normal;
+	font-size: 80%;
+	color: #FFF;
+	background-color: #BABABA;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .33);
+	border-radius: 5px;
+	padding: 3px 7px;
+}
+
+.home-columns p
+{
+	font-size: 83%;
+}
+
+/* Main Column */
+.main-column
+{
+	width: 66%;
+	float: left;
+}
+/* Side Column */
+.secondary-column
+{
+	width: 30%;
+	float: right;
+}
+
+/* Footer Widget Area */
+.footer-widget-area
+{
+	width: 25%;
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+/* Site footer Menu */
+.site-footer nav ul li
+{
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px dotted #AAA;
+}
+
+.site-footer nav ul li:first-of-type
+{
+	padding-left: 5px;
+	border-left: 1px dotted #AAA;
+}
+
+article.page h2
+{
+	font-size: 250%;
+}
+
+/* CLearfix */
+.clearfix:before, .clearfix:after {content: ""; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+
+/* Two column title layout */
+div.title-column
+{
+	width: 30%;
+	float: left;
+}
+
+div.text-column
+{
+	width: 70%;
+	float: left;
+}
+
+div.info-box
+{
+	width: 30%;
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 3px 10px;
+	background-color: #EEE;
+}
+
+div.info-box h4
+{
+	margin-bottom: 6px;
+}
+
+div.info-box p
+{
+	font-size: 85%;
+}
+
+.children-links
+{
+	margin-bottom: 20px;
+	font-size: 80%;
+}
+
+.children-links a:link
+.children-links a:visited
+{
+	text-decoration: none;
+}
+
+.children-links ul
+{
+	float: left;
+}
+
+.children-links li
+{
+	margin-right: 20px;
+}
+
+.children-links .parent-link
+{
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #DDD;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited
+{
+	color: #333;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited
+{
+	border-bottom: 1px solid #AAA;
+	color: #333;
+	cursor: default;
+}
+
+/* Post styles */
+.post h2
+{
+	margin-bottom: 0px;
+}
+
+p.post-info
+{
+	margin-top: 0px;
+	font-size: 87%;
+	color: #777;
+}
+
+p.post-info a:link,
+p.post-info a:visited
+{
+	color: #777;
+}
+
+/* Images Styles */
+
+img
+{
+	max-width:100%;
+	height: auto;	
+}
+
+.has-thumbnail
+{
+	position: relative;
+	padding-left: 200px;
+}
+
+.post-thumbnail
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+article.has-thumbnail div.excerpt-preview
+{
+	min-height: 70px;
+}
+
+/* search form */
+.hd-search
+{
+	float: right;
+}
+
+div.hd-search span.screen-reader-text
+{
+	display: none;
+}
+
+div.hd-search .search-submit
+{
+	background-color: #006ec3;
+	color: #FFF;
+	padding: 5px 14px;
+	border: none;
+	vertical-align: top;
+}
+
+div.hd-search .search-field
+{
+	vertical-align: top;
+	padding: 5px;
+}
+
