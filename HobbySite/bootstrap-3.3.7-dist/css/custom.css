@@ -1,0 +1,646 @@
+body
+{
+	background-color: #222;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+#wrapper
+{
+	/* Background pattern from subtlepatterns.com */
+	background: url("../../pic/stressed_linen.png") center center;
+	max-width: 1600px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+
+header
+{
+	position: relative;
+	min-height: 100vh;
+	height: auto;
+	background: url("../../pic/rsz_234H.jpg") center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header .logo
+{
+	float: left;
+	height: 50px;
+	width: 50px;
+	border: solid 1px #000;
+	margin: 10px 0 0 30px;
+}
+
+.logo img
+{
+	height: 100%;
+	width: 100%;
+}
+
+nav
+{
+	float: right;
+}
+
+nav a
+{
+	float: left;
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: 700;
+	color: rgba(0,0,0,0.7);
+	margin: 20px 30px 0 0;
+}
+
+nav a:hover,
+nav a:visited,
+nav a:focus
+{
+	color: rgba(0,0,0,1);
+	text-decoration: none;
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+header h1
+{
+	text-align: center;
+	font-size: 50px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.7);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding-top: 100px;
+	-webkit-text-stroke: 1px black;
+}
+
+header h1 span
+{
+	display: inline-block;
+	padding: 8px 18px;
+	border: rgba(255,255,255,0.7) solid 5px;
+}
+
+header h2
+{
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+	font-weight: 700;
+	-webkit-text-stroke: 1px black;
+}
+
+#scroll-down
+{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+}
+
+#scroll-down a span
+{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	width: 46px;
+	height: 46px;
+	margin-left: -23px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	box-sizing: border-box;
+	opacity: 0.5;
+}
+
+#scroll-down a span::after
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	width: 16px;
+	height: 16px;
+	margin: -12px 0 0 -8px;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+	opacity: 0.5;
+}
+
+#scroll-down a span:hover
+{
+	opacity: 1;
+}
+
+.back-to-top
+{
+	z-index: 100;
+	width: 70px;
+	height: 70px;
+	background: url("../../pic/back.png");
+	background-size: 100%;
+	position: fixed;
+	right: 0.5%;
+	bottom: 60px;
+	opacity: 0.5;
+	display: none;
+}
+
+.back-to-top:hover
+{
+	opacity: 1;
+}
+
+section
+{
+	background-color: #444;
+	width: 80%;
+	height: 100%;
+	/*min-height: 100vh;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1% 1%;
+	font-size: 20px;
+}
+
+section.rounded
+{
+	border-radius: 15px;
+}
+
+section p
+{
+	padding: 2% 2%;
+}
+
+section h2
+{
+	color: white; /*#bc5623;*/
+	-webkit-text-stroke: 2px black;
+	font-size: 42px;
+	margin-top: 0;
+	text-align: center;
+}
+
+#about-left
+{
+	width: 33%;
+	float: left;
+	padding: 1%;
+	border-right: solid 3px #aaa;
+}
+
+#about-left img
+{
+	width: 100%;
+	height: 100%;
+	max-height: 314px; 
+	max-width: 314px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.dl-horizontal
+{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#about-right
+{
+	width: 67%;
+	float: left;
+	padding: 1%;
+}
+
+#guitar
+{
+	position: relative;
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	padding-left: 12%;
+	padding-right: 12%;
+	background: url("../../pic/rsz_guitar.jpg") center center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+#guitar-left
+{
+	width: 12%;
+	height: 36%;
+	float: left;
+	padding: 1%;
+	/*background-color: rgba(100,20,50,0.5);*/
+	background-image: url("../../pic/rsz_pick.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 20%;
+	top: 18%;
+}
+
+#guitar-right
+{
+	width: 60%;
+	float: right;
+	margin: 0;
+	margin-top: 8%;
+	padding: 1%;
+	background: rgba(0, 0, 0, 0.75);
+	color: white;
+}
+
+#formula img
+{
+	max-height: 88vh;
+	width: 100%;
+}
+
+.carousel-caption h3,
+.carousel-caption p
+{
+	background: rgba(0, 0, 0, 0.6);
+	padding: 4px 8px;
+	color: white;
+	margin: 0;
+}
+
+#cycling
+{
+	position: relative;
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	padding-left: 12%;
+	padding-right: 12%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+	url("../../pic/rsz_88h.jpg");
+	overflow: hidden;
+}
+
+#cycling-left
+{
+	margin-top: 20px;
+	float: left;
+	width: 66%;
+}
+
+#cycling-left p {
+	background-color: #333;
+	color: #fff;
+	display: inline;
+	padding: 0.5rem;
+	/* Needs prefixing */
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+#cycling-right
+{
+	margin-top: 20px;
+	float: left;
+	width: 34%;
+	padding: 2px;
+}
+
+#cycling-right a
+{
+	width: 80%;
+	height: 80%;
+	max-height: 430px;
+	max-height: 430px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cycling-right img
+{
+	width: 100%;
+	height: 100%;
+	max-height: 430px;
+	max-height: 430px;
+	border: solid 4px #333;
+	border-radius: 15px;
+}
+
+.container
+{
+	width: 100%;
+}
+
+.new-padding
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.modal-dialog
+{
+	width: 90%;
+	max-width: 950px;
+}
+
+.modal-content
+{
+	background-color: #999;
+}
+
+.modal-header
+{
+	border-bottom-color: #555;
+}
+
+.modal-title
+{
+	color: black;
+}
+
+.thumbnail
+{
+	margin-bottom: 6px;
+}
+
+.modal-body img
+{
+	padding: 0px;
+	border-color: #555;
+}
+
+.modal-footer
+{
+	border-top-color: #555;
+}
+
+.modal-footer h4
+{
+	float: left;
+	text-align: left;
+	width: 85%;
+	color: black;
+}
+
+footer
+{
+	background: url("../../pic/rsz_234H.jpg") center bottom;
+	background-size: cover;
+}
+
+.lockup
+{
+	background: rgba(0, 0, 0, 0.5);
+	color: rgba(200,200,200,0.8);
+	padding: 5px;
+}
+
+.lockup .logo
+{
+	height: 50px;
+	width: 50px;
+	float: left;
+	border: solid 1px #000;
+	margin: 5px 20px 0px 0px;
+}
+
+.lockup a
+{
+	margin-top: 5px;
+}
+
+.content-wrap
+{
+	float: left;
+
+}
+
+.content-wrap nav a:hover,
+.content-wrap nav a:visited,
+.content-wrap nav a:focus
+{
+	color: rgba(200,200,200,1);
+}
+
+.copyright
+{
+	margin: 0;
+	font-size: 12px;
+	font-weight: 700;
+	color: rgba(250,250,250,0.9);
+}
+
+/***** Handling description list bug... *****/
+@media (min-width: 768px) {
+	.dl-horizontal dt
+	{
+		width: 100px;
+	}
+
+	.dl-horizontal dd
+	{
+		margin-left: 110px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 930px) {
+	.dl-horizontal dt
+	{
+		width: 80px;
+		font-size: 16px;
+	}
+
+	.dl-horizontal dd
+	{
+		margin-left: 90px;
+		font-size: 16px;
+	}
+}
+
+/***** Other media queries *****/
+@media (max-width: 768px){
+	section
+	{
+		font-size: 16px;
+	}
+
+	#cycling-left p
+	{
+		padding: 0.2rem;
+	}
+}
+
+@media (max-width: 640px){
+	header .logo
+	{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	nav
+	{
+		display: table;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	header h1
+	{
+		padding-top: 30px;
+	}
+
+	.back-to-top
+	{
+		width: 46px;
+		height: 46px;
+		right: 0.25%;
+	}
+
+	#about-left
+	{
+		width: 100%;
+		float: none;
+		border-right: none;
+	}
+
+	#about-left img
+	{
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 200px;
+		max-width: 200px;
+	}
+
+	.dl-horizontal dt {
+		float: left;
+		width: 100px;
+		overflow: hidden;
+		clear: left;
+		text-align: right;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.dl-horizontal dd {
+		margin-left: 120px;
+	}
+
+	#about-right
+	{
+		width: 100%;
+		float: none;
+	}
+
+	#guitar-left
+	{
+		width: 100%;
+		float: none;
+		height: 100px;
+		left: 0%;
+		top: 10%;
+	}
+
+	#guitar-right
+	{
+		width: 100%;
+		float: none;
+		margin-top: 115px;
+	}
+
+	div.carousel-caption p
+	{
+		display: none;
+	}
+
+	#cycling-left
+	{
+		width: 100%;
+		float: none;
+	}
+
+	#cycling-right
+	{
+		width: 60%;
+		float: none;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.lockup .logo
+	{
+		float: none;
+		display: none;
+	}
+
+	.content-wrap
+	{
+		float: none;
+	}
+
+	.content-wrap a
+	{
+		margin-right: 15px;
+	}
+
+	.copyright
+	{
+		text-align: center;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 450px){
+	nav a
+	{
+		width: 100%;
+		display: table;
+		float: none;
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center; 
+	}
+
+	header h1
+	{
+		padding-top: 30px;
+	}
+
+	.content-wrap a
+	{
+		margin-top: 0;
+	}
+
+	.back-to-top
+	{
+		bottom: 10px;
+		width: 33px;
+		height: 33px;
+	}
+
+	section
+	{
+		font-size: 14px;
+	}
+}
